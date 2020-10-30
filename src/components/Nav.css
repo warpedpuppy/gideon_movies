@@ -1,0 +1,58 @@
+nav {
+    width: 100vw;
+    height: 50px;
+    background-color: #333;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.menu span {
+    width: 35px;
+    height: 5px;
+    background-color: #FFF;
+    margin: 6px 0;
+    transition: 0.4s;
+    display: block;
+    cursor: pointer;
+}
+
+.hidden {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -50px;
+    z-index: -1;
+    transition: all 0.5s;
+}
+
+.hidden.expose {
+    margin-top: 0;
+}
+
+
+/* this is straight from w3c */
+
+span.change:nth-child(1) {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+span.change:nth-child(2) {
+    opacity: 0;
+}
+
+span.change:nth-child(3) {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}

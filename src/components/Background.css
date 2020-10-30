@@ -1,0 +1,150 @@
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+svg {
+    border: 2px solid black;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: block;
+}
+
+rect {
+    stroke: black;
+    opacity: 0.5;
+}
+
+.horizBox {
+    width: 100%;
+    height: 50%;
+}
+
+.vertBox {
+    width: 50%;
+    height: 100%;
+}
+
+.leftTop {
+    fill: red;
+    animation: leftSlide 5s ease infinite;
+}
+
+.rightTop {
+    fill: red;
+    x: 50%;
+    animation: rightSlide 5s ease infinite;
+}
+
+.topTop {
+    fill: purple;
+    animation: topSlide 5s ease infinite;
+}
+
+.bottomTop {
+    fill: purple;
+    y: 50%;
+    animation: bottomSlide 5s ease infinite;
+}
+
+.leftMiddle {
+    fill: green;
+    animation: leftSlide 6s ease infinite 1s;
+}
+
+.rightMiddle {
+    fill: green;
+    x: 50%;
+    animation: rightSlide 6s ease infinite 1s;
+}
+
+.topMiddle {
+    fill: blue;
+    stroke: black;
+    animation: topSlide 6s ease infinite 1s;
+}
+
+.bottomMiddle {
+    fill: blue;
+    stroke: black;
+    y: 50%;
+    animation: bottomSlide 6s ease infinite 1s;
+}
+
+.leftBack {
+    fill: yellow;
+    animation: leftSlide 7s ease-in-out infinite 2s;
+}
+
+.rightBack {
+    fill: yellow;
+    x: 50%;
+    animation: rightSlide 7s ease-in-out infinite 2s;
+}
+
+.topBack {
+    fill: orange;
+    stroke: black;
+    animation: topSlide 7s ease-in-out infinite 2s;
+}
+
+.bottomBack {
+    fill: orange;
+    stroke: black;
+    y: 50%;
+    animation: bottomSlide 7s ease-in-out infinite 2s;
+}
+
+@keyframes leftSlide {
+    0% {
+        x: 0;
+    }
+    50% {
+        x: -50%;
+    }
+    100% {
+        x: 0;
+    }
+}
+
+@keyframes rightSlide {
+    0% {
+        x: 50%;
+    }
+    50% {
+        x: 100%;
+    }
+    100% {
+        x: 50%;
+    }
+}
+
+@keyframes topSlide {
+    0% {
+        y: 0;
+    }
+    50% {
+        y: -50%;
+    }
+    100% {
+        y: 0;
+    }
+}
+
+@keyframes bottomSlide {
+    0% {
+        y: 50%;
+    }
+    50% {
+        y: 100%;
+    }
+    100% {
+        y: 50%;
+    }
+}
