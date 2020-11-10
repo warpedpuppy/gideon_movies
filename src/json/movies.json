@@ -1,0 +1,22 @@
+{
+    "movie1": {
+        "src": "https://player.vimeo.com/video/178803874",
+        "width": 640,
+        "height": 360
+    },
+    "movie2": {
+        "src": "https://player.vimeo.com/video/381454561",
+        "width": 640,
+        "height": 267
+    },
+    "movie3": {
+        "src": "https://player.vimeo.com/video/402718143",
+        "width": 640,
+        "height": 360
+    },
+    "movie4": {
+        "src": "https://player.vimeo.com/video/447632879",
+        "width": 640,
+        "height": 396
+    }
+}
