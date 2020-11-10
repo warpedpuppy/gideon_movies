@@ -1,10 +1,13 @@
 import React, { Component } from 'react'
 import './Home.css';
 export default class Home extends Component {
+    imageLoaded = (e) => {
+        e.target.classList.add("on")
+    }
     render() {
         return (
             <section className="home-div">
-                <div className="background-image"></div>
+                <img src="https://condescending-curie-29a045.netlify.app//bmps/background.png" className="background-image" onLoad={this.imageLoaded} />>
                 <div className="home-text">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus scelerisque diam nibh, eu pulvinar eros tristique eu. Phasellus posuere gravida convallis. Mauris velit nunc, rhoncus a libero sit amet, vulputate iaculis justo. Mauris a ipsum fringilla, pulvinar magna vulputate, eleifend sapien. Donec egestas nec sem non iaculis. Curabitur vitae purus elit. Morbi vel lacinia justo. Vivamus ac felis at risus feugiat molestie eu eu purus.</p>
 
