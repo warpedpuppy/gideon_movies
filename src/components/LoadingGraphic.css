@@ -1,0 +1,68 @@
+    .loading-graphic {
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .loading-graphic .loading-words {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 10;
+        font-size: 100px;
+        color: white;
+    }
+    
+    .loading-background {
+        display: flex;
+        width: 100%;
+        height: 500px;
+        background: black;
+        position: relative;
+        z-index: 9;
+    }
+    
+    .loading-background div {
+        width: 20%;
+        height: 500px;
+        animation-name: growShrink;
+        /* animation-delay: 1s; */
+        animation-iteration-count: infinite;
+        position: relative;
+    }
+    
+    .loading-background div:first-child {
+        background: #ff3366;
+        animation-duration: 1s;
+    }
+    
+    .loading-background div:nth-child(2) {
+        background: #ff6633;
+        animation-duration: 1.2s;
+    }
+    
+    .loading-background div:nth-child(3) {
+        background: #FFCC33;
+        animation-duration: 1.4s;
+    }
+    
+    .loading-background div:nth-child(4) {
+        background: #33FF66;
+        animation-duration: 1.6s;
+    }
+    
+    .loading-background div:nth-child(5) {
+        background: #33FFCC;
+        animation-duration: 1.8s;
+    }
+    
+    @keyframes growShrink {
+        0% {
+            top: 300px;
+        }
+        50% {
+            top: 0px;
+        }
+        100% {
+            top: -500px;
+        }
+    }
