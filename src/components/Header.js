@@ -6,11 +6,11 @@ export default class Header extends Component {
     render() {
         return (
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
-            <Navbar.Brand as={Link} to="/home">Gideon Baeza</Navbar.Brand>
+            <Navbar.Brand as={Link} to="/">Gideon Baeza</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav>
-                <Nav.Link eventKey="1" as={Link} to="/home">Home</Nav.Link>
+                <Nav.Link eventKey="1" as={Link} to="/">Home</Nav.Link>
                 <Nav.Link eventKey="1" as={Link}  to="/movies">Movies</Nav.Link>
                 <Nav.Link eventKey="1" as={Link}  to="/about">About</Nav.Link>
                 <Nav.Link eventKey="1" as={Link}  to="/contact">Contact</Nav.Link>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import LoadingGraphic from './LoadingGraphic';
 import './Movie.css';
-import Movie1 from './movies/Movie1'
+// import Movie1 from './movies/Movie1'
 export default class Movie extends Component {
 
     state = {

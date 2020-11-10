@@ -1,0 +1,13 @@
+.contact-div {
+    margin: 150px auto;
+    width: 400px;
+    text-align: left;
+}
+
+.contact-div button {
+    float: right;
+}
+
+.results {
+    clear: both;
+}

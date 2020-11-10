@@ -1,8 +1,8 @@
 import React from 'react';
-import Movie1 from './movies/Movie1';
-import Movie2 from './movies/Movie2';
-import Movie3 from './movies/Movie3';
-import Movie4 from './movies/Movie4';
+// import Movie1 from './movies/Movie1';
+// import Movie2 from './movies/Movie2';
+// import Movie3 from './movies/Movie3';
+// import Movie4 from './movies/Movie4';
 import Movie from './Movie';
 import './MovieChooser.css';
 import Pagination from 'react-bootstrap/Pagination';
