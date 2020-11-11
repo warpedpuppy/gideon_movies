@@ -20,6 +20,8 @@ main {
 .home-text {
     width: 80%;
     margin: 150px auto;
+    position: relative;
+    z-index: 2000;
 }
 
 .home-text p {

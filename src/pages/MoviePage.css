@@ -1,0 +1,15 @@
+.movie-page-shell {
+    margin: 125px auto 0;
+    width: 90%;
+    max-width: 768px;
+}
+
+.movie-page-shell h2 {
+    text-align: left;
+    border-bottom: 1px solid grey;
+    margin-bottom: 30px;
+}
+
+.movie-shell {
+    margin: 20px auto;
+}

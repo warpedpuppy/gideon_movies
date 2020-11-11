@@ -2,21 +2,29 @@
     "movie1": {
         "src": "https://player.vimeo.com/video/178803874",
         "width": 640,
-        "height": 360
+        "height": 360,
+        "vimeoLink": "https://vimeo.com/178803874",
+        "title": "Candlepin"
     },
     "movie2": {
         "src": "https://player.vimeo.com/video/381454561",
         "width": 640,
-        "height": 267
+        "height": 267,
+        "vimeoLink": "https://vimeo.com/381454561",
+        "title": "LoveBug"
     },
     "movie3": {
         "src": "https://player.vimeo.com/video/402718143",
         "width": 640,
-        "height": 360
+        "height": 360,
+        "vimeoLink": "https://vimeo.com/402718143",
+        "title": "Book Arts Doc Original"
     },
     "movie4": {
         "src": "https://player.vimeo.com/video/447632879",
         "width": 640,
-        "height": 396
+        "height": 396,
+        "vimeoLink": "https://vimeo.com/447632879",
+        "title": "Finding Our Voices Documentary"
     }
 }

@@ -42,7 +42,7 @@ export default class Movie extends Component {
                 allowFullScreen></iframe>
                 </div>
                 <p>
-                    <a href="https://vimeo.com/447632879">Finding Our Voices Documentary</a> from 
+                    <a href={this.props.movie.vimeoLink}>{this.props.movie.title}</a> from 
                     <a href="https://vimeo.com/user38547687">Gideon Baeza</a> on <a href="https://vimeo.com">Vimeo</a>.
                 </p>
             </div>

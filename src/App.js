@@ -7,19 +7,20 @@ import NotFound from './pages/NotFound';
 import Contact from './pages/Contact';
 import About from './pages/About';
 import Movies from './pages/Movies';
+import MoviePage from './pages/MoviePage';
 // import {Navbar, Nav, NavDropdown, Form, FormControl, Button, NavItem} from 'react-bootstrap';
 
 function App() {
   return (
     <div className="App">
       <Header />
-        
         <main>
         <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/movies" component={Movies} />
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
+            <Route path="/movie-page/:id" component={ MoviePage } />
             <Route component={NotFound} />
         </Switch>
         </main>
