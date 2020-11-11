@@ -18,7 +18,6 @@ export default class Home extends Component {
                         <li> <Link to='/movie-page/2'>LoveBug</Link></li>
                         <li> <Link to='/movie-page/3'>Book Arts Doc Original</Link></li>
                         <li> <Link to='/movie-page/4'>Finding Our Voices Documentary</Link></li>
-
                     </ul>
 
 

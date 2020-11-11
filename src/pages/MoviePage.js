@@ -3,7 +3,6 @@ import LoadingGraphic from '../components/LoadingGraphic';
 import './MoviePage.css';
 import Movies from '../json/movies.json';
 import { Tabs, Tab, Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 
 export default class MoviePage extends Component {
 

@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 import About from './pages/About';
 import Movies from './pages/Movies';
 import MoviePage from './pages/MoviePage';
+import Footer from './components/Footer'
 // import {Navbar, Nav, NavDropdown, Form, FormControl, Button, NavItem} from 'react-bootstrap';
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
             <Route component={NotFound} />
         </Switch>
         </main>
-        <footer></footer>
+        <Footer />
     </div>
   );
 }
