@@ -10,6 +10,7 @@ export default class Contact extends Component {
         return (
             <section>
                 <div className="contact-div">
+                <img src="/bmps/skateboard.jpeg" alt="gideon with bruno" className="contact-background-image" />
                     <h3>Contact Gideon:</h3>
                     <Form onSubmit={this.onSubmitHandler}>
                         <Form.Group controlId="exampleForm.ControlInput1">
