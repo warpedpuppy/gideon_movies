@@ -24,7 +24,16 @@ export default class MoviePage extends Component {
         this.props.history.push(`/movie-page/${newMovie}`)
         console.log(plusOne, newMovie, Movies[`movie${newMovie}`])
         this.setState({movie:  Movies[`movie${newMovie}`]});
-
+        this.setState({loaded: false})
+    }
+    previousMovie = (e) => {
+        e.preventDefault();
+        let length = Object.keys(Movies).length;
+        let minusOne = parseInt(this.props.match.params.id, 10) - 1;
+        let newMovie = Movies[`movie${minusOne}`] ? minusOne : length;
+        this.props.history.push(`/movie-page/${newMovie}`)
+        this.setState({movie:  Movies[`movie${newMovie}`]});
+        this.setState({loaded: false})
     }
     loadComplete = () => {
         this.setState({loaded: true})
@@ -43,8 +52,10 @@ export default class MoviePage extends Component {
         return (
             <section className="movie-page-shell">
                 <h2>{this.state.movie.title}</h2>
-                <Button size="sm" variant="outline-primary" onClick={this.nextMovie}>previous movie</Button>
-                <Button size="sm" variant="outline-primary" onClick={this.nextMovie}>next movie</Button>
+                <div className="button-div">
+                    <Button size="sm" variant="outline-primary" onClick={this.previousMovie}>previous movie</Button>
+                    <Button size="sm" variant="outline-primary" onClick={this.nextMovie}>next movie</Button>
+                </div>
                 <Tabs defaultActiveKey="movie" id="movie-tabs">
                 <Tab eventKey="movie" title="Movie">
                     <div className="movie-shell">

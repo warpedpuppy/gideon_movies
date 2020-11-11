@@ -10,14 +10,14 @@ export default class Home extends Component {
             <section className="home-div">
                 <img src="https://condescending-curie-29a045.netlify.app//bmps/background.png" alt="gideon with bruno" className="background-image" onLoad={this.imageLoaded} />
                 <div className="home-text">
-                <Link to='/movie-page/1'>movie 1</Link>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus scelerisque diam nibh, eu pulvinar eros tristique eu. Phasellus posuere gravida convallis. Mauris velit nunc, rhoncus a libero sit amet, vulputate iaculis justo. Mauris a ipsum fringilla, pulvinar magna vulputate, eleifend sapien. Donec egestas nec sem non iaculis. Curabitur vitae purus elit. Morbi vel lacinia justo. Vivamus ac felis at risus feugiat molestie eu eu purus.</p>
+               
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus scelerisque diam nibh, eu pulvinar eros tristique eu. Phasellus posuere gravida convallis.</p>
 
                     <ul>
-                        <li></li>
-                        <li>movie 2</li>
-                        <li>movie 3</li>
-                        <li>movie 4</li>
+                        <li> <Link to='/movie-page/1'>Candlepin</Link></li>
+                        <li> <Link to='/movie-page/2'>LoveBug</Link></li>
+                        <li> <Link to='/movie-page/3'>Book Arts Doc Original</Link></li>
+                        <li> <Link to='/movie-page/4'>Finding Our Voices Documentary</Link></li>
 
                     </ul>
 

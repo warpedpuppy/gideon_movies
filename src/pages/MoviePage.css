@@ -7,9 +7,15 @@
 .movie-page-shell h2 {
     text-align: left;
     border-bottom: 1px solid grey;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
 }
 
 .movie-shell {
     margin: 20px auto;
+}
+
+.button-div {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0 20px;
 }
