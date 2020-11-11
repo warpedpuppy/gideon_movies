@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import LoadingGraphic from '../components/LoadingGraphic';
 import './MoviePage.css';
 import Movies from '../json/movies.json';
-import { Tabs, Tab, Button } from 'react-bootstrap';
+import { Tabs, Tab } from 'react-bootstrap';
 
 export default class MoviePage extends Component {
 
@@ -52,8 +52,8 @@ export default class MoviePage extends Component {
             <section className="movie-page-shell">
                 <h2>{this.state.movie.title}</h2>
                 <div className="button-div">
-                    <Button size="sm" variant="outline-primary" onClick={this.previousMovie}>previous movie</Button>
-                    <Button size="sm" variant="outline-primary" onClick={this.nextMovie}>next movie</Button>
+                    <span className="prevNext" onClick={this.previousMovie}>previous</span>
+                    <span className="prevNext" onClick={this.nextMovie}>next</span>
                 </div>
                 <Tabs defaultActiveKey="movie" id="movie-tabs">
                 <Tab eventKey="movie" title="Movie">
