@@ -5,6 +5,12 @@
     text-align: left;
 }
 
+input[name=checker] {
+    padding: 0;
+    height: 0;
+    border: none;
+}
+
 .contact-div button {
     float: right;
 }
