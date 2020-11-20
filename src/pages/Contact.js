@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Form, Button} from 'react-bootstrap';
 import './Contact.css';
+import Config from '../config';
 export default class Contact extends Component {
     state = {
         message: "test"
@@ -10,9 +11,9 @@ export default class Contact extends Component {
         let email = e.target.email.value,
             message = e.target.message.value,
             checker = e.target.checker.value;
-    
+        this.setState({message: "sending. . . "})
         if (email && message) {
-            let response = await fetch(`http://localhost:8000/api/gideon/`, {
+            let response = await fetch(`${Config.local_url}/email`, {
                 body: JSON.stringify({ email, message, checker }),
                 headers: {
                  'content-type': 'application/json',
@@ -21,6 +22,12 @@ export default class Contact extends Component {
             });
             let responseJson = await response.json();
             console.log(responseJson)
+
+            if (responseJson.message) {
+                this.setState({message: "message sent"})
+            } else {
+                this.setState({message: "there was an issue, please try again later"})
+            }
        
         } else {
             this.setState({message: "all fields required"})

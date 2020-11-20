@@ -11,7 +11,7 @@ export default class Header extends Component {
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav>
                 <Nav.Link eventKey="1" as={Link} to="/">Home</Nav.Link>
-                <Nav.Link eventKey="1" as={Link}  to="/movies">Movies</Nav.Link>
+                {/* <Nav.Link eventKey="1" as={Link}  to="/movies">Movies</Nav.Link> */}
                 <Nav.Link eventKey="1" as={Link}  to="/about">About</Nav.Link>
                 <Nav.Link eventKey="1" as={Link}  to="/contact">Contact</Nav.Link>
                 </Nav>
