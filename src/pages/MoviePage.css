@@ -2,6 +2,7 @@
     margin: 125px auto 0;
     width: 100vw;
     max-width: 768px;
+    padding: 0 15px;
 }
 
 .movie-page-shell h2 {
@@ -42,6 +43,7 @@
         margin: 125px auto 0;
         width: 90%;
         max-width: 768px;
+        padding: 0;
     }
     .movie-page-shell {
         margin: 125px auto 0;
