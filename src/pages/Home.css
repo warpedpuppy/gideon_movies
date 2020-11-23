@@ -2,15 +2,21 @@
     list-style-type: none;
 }
 
-.background-image {
+.background-image-mobile {
+    background-image: url('https://condescending-curie-29a045.netlify.app//bmps/background.png');
+    background-size: cover;
+    background-position: center center;
     width: 100vw;
-    height: auto;
-    opacity: 0;
+    height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
-    margin: 0;
-    transition: opacity 1s;
+    z-index: -1;
+    opacity: 0.25;
+}
+
+.background-image {
+    display: none;
 }
 
 .background-image.on {
@@ -28,7 +34,23 @@ main {
     z-index: 2;
 }
 
-.home-text>p {
+.home-text p {
     text-align: left;
-    clear: both;
+}
+
+@media (min-width:750px) {
+    .background-image-mobile {
+        display: none;
+    }
+    .background-image {
+        display: block;
+        width: 100vw;
+        height: auto;
+        opacity: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin: 0;
+        transition: opacity 1s;
+    }
 }

@@ -9,6 +9,7 @@ export default class Home extends Component {
     render() {
         return (
             <section className="home-div">
+                <div className="background-image-mobile"></div>
                 <img src="https://condescending-curie-29a045.netlify.app//bmps/background.png" alt="gideon with bruno" className="background-image" onLoad={this.imageLoaded} />
                 <div className="home-text">
                
