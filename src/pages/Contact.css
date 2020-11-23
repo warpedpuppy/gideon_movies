@@ -17,6 +17,9 @@ input[name=checker] {
 
 .results {
     clear: both;
+    text-align: center;
+    color: green;
+    font-weight: bold;
 }
 
 .contact-background-image {

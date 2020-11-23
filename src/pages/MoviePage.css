@@ -1,6 +1,6 @@
 .movie-page-shell {
     margin: 125px auto 0;
-    width: 90%;
+    width: 100vw;
     max-width: 768px;
 }
 
@@ -10,8 +10,21 @@
     margin-bottom: 5px;
 }
 
+.iFrameClass.not-loaded {
+    display: none;
+}
+
+.iFrameClass {
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+.iFrameContainer iframe {}
+
 .movie-shell {
     margin: 20px auto;
+    /* width: 100vw; */
 }
 
 .button-div {
@@ -22,4 +35,19 @@
 
 .prevNext {
     cursor: pointer;
+}
+
+@media (min-width:750px) {
+    .movie-page-shell {
+        margin: 125px auto 0;
+        width: 90%;
+        max-width: 768px;
+    }
+    .movie-page-shell {
+        margin: 125px auto 0;
+        max-width: 768px;
+    }
+    .movie-shell {
+        margin: 20px auto;
+    }
 }

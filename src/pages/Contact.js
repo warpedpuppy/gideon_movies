@@ -4,7 +4,7 @@ import './Contact.css';
 import Config from '../config';
 export default class Contact extends Component {
     state = {
-        message: "test"
+        message: ""
     }
     onSubmitHandler = async (e)  => {
         e.preventDefault();

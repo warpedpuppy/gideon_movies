@@ -43,10 +43,11 @@ export default class MoviePage extends Component {
       }
     render() {
        
-        let loadedClass = this.props.loaded ? "loaded" : "not-loaded" ;
+        let loadedClass = this.state.loaded ? "loaded" : "not-loaded" ;
         let style  = {
             width: this.state.width > 768 ? this.state.movie.width : "95vw",
-            height: this.state.movie.height
+            height: this.state.movie.height,
+            margin: "0 auto"
         }
         return (
             <section className="movie-page-shell">
@@ -59,17 +60,17 @@ export default class MoviePage extends Component {
                 <Tab eventKey="movie" title="Movie">
                     <div className="movie-shell">
                         <LoadingGraphic w={this.state.movie.width} h={this.state.movie.height} loaded={this.state.loaded} />
-                        <div className={`${loadedClass} iFrameClass`}>
-                        <iframe 
-                        style={style}
-                        src={this.state.movie.src}  
-                        title="movie 4" 
-                        // width={this.state.movie.width}  
-                        height={this.state.movie.height}   
-                        frameBorder="0" 
-                        allow="autoplay; fullscreen" 
-                        onLoad={ () => this.loadComplete() }
-                        allowFullScreen></iframe>
+                        <div className={`${loadedClass} iFrameClass`}  style={style}>
+                            <iframe 
+                            style={style}
+                            src={this.state.movie.src}  
+                            title="movie 4" 
+                            width={this.state.movie.width}  
+                            height={this.state.movie.height}   
+                            frameBorder="0" 
+                            allow="autoplay; fullscreen" 
+                            onLoad={ () => this.loadComplete() }
+                            allowFullScreen></iframe>
                         </div>
                         <p>
                             <a href={this.state.movie.vimeoLink}>{this.state.movie.title}</a> from 

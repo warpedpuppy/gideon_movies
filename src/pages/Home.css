@@ -1,3 +1,7 @@
+.home-div .home-text ul {
+    list-style-type: none;
+}
+
 .background-image {
     width: 100vw;
     height: auto;
@@ -24,6 +28,7 @@ main {
     z-index: 2;
 }
 
-.home-text p {
+.home-text>p {
     text-align: left;
+    clear: both;
 }
