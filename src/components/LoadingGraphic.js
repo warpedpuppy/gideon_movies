@@ -1,7 +1,6 @@
 import React from 'react'
 import './LoadingGraphic.css'
 export default function LoadingGraphic(props) {
-    console.log(props)
     let style = {
         width: props.w,
         height: props.h,

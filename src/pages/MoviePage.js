@@ -13,7 +13,9 @@ export default class MoviePage extends Component {
     }
 
     componentDidMount () {
-        console.log(this.props);
+        let height = Movies[`movie${this.props.match.params.id}`].height;
+ 
+        this.props.setHeight(height)
        this.updateWindowDimensions();
        
     }
