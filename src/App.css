@@ -3,9 +3,9 @@
 }
 
 .move-reel {
-    background-image: url("../public/bmps/filmStrip.png");
+    /* background-image: url("/filmStrip.png");
     width: 100px;
-    height: 3200px;
+    height: 3200px; */
 }
 
 .App-logo {
