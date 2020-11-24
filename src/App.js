@@ -28,11 +28,8 @@ class App extends React.Component {
           <main>
           <Switch>
               <Route exact path="/" component={Home} />
-              {/* <Route path="/movies" component={Movies} /> */}
               <Route path="/about" component={About} />
               <Route path="/contact" component={Contact} />
-              {/* <Route path="/movie-page/:id" component={MoviePage} /> */}
-
               <Route path="/movie-page/:id" render={ (props) => <MoviePage {...props} setHeight={this.setHeight} /> } />
               <Route component={NotFound} />
           </Switch>

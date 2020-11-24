@@ -31,7 +31,6 @@ export default class MoviePage extends Component {
         let plusOne = parseInt(this.props.match.params.id, 10) + 1;
         let newMovie = Movies[`movie${plusOne}`] ? plusOne : 1;
         this.props.history.push(`/movie-page/${newMovie}`)
-        console.log(plusOne, newMovie, Movies[`movie${newMovie}`])
         this.setState({movie:  Movies[`movie${newMovie}`]});
         this.setState({loaded: false})
     }
@@ -56,18 +55,8 @@ export default class MoviePage extends Component {
         let originalAspectRatio = this.state.movie.height / this.state.movie.width;
         let mobileHeight = mobileWidth * originalAspectRatio;
         let iframeStyle  = {
-            // width: `${parseInt(this.state.movie.width,10)}px`,
-            // height: `${parseInt(this.state.movie.height,10)}px`,
             width: parseInt(this.state.width, 10) > this.widthChange ? `${parseInt(this.state.movie.width,10)}px` : `${parseInt(mobileWidth,10)}px`,
             height: parseInt(this.state.width, 10) > this.widthChange ? `${parseInt(this.state.movie.height,10)}px` : `${parseInt(mobileHeight,10)}px`,
-            // width: parseInt(this.state.width, 10) > this.widthChange ? `${parseInt(this.state.movie.width,10)}px` : "95vw",
-            // height: parseInt(this.state.width, 10) > this.widthChange ? `${parseInt(this.state.movie.height,10)}px` : "auto",
-      
-        }
-        let shellStyle = {
-            // width: parseInt(this.state.width, 10) > this.widthChange ? `${parseInt(this.state.movie.width,10)}px` : `${parseInt(mobileWidth,10)}px`,
-            // minHeight: `${parseInt(this.state.movie.height,10)}px`,
-            // border: "1px solid red"
         }
         return (
             <section className="movie-page-shell">
@@ -78,9 +67,10 @@ export default class MoviePage extends Component {
                 </div>
                 <Tabs defaultActiveKey="movie" id="movie-tabs">
                 <Tab eventKey="movie" title="Movie">
-                    <div className="movie-shell" style={shellStyle}>
+                    <div className="movie-shell">
                         <LoadingGraphic w={iframeStyle.width} h={iframeStyle.height} loaded={this.state.loaded} browserWidth={this.state.width} />
                             <iframe 
+                            id="iframe"
                             className="iFrameClass"
                             style={iframeStyle}
                             src={this.state.movie.src}  
