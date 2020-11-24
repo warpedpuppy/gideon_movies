@@ -26,9 +26,8 @@
     right: 0;
     display: block;
     width: 100%;
+    margin: 0 auto;
 }
-
-.iFrameContainer iframe {}
 
 .movie-shell {
     margin: 20px auto;
@@ -45,8 +44,8 @@
     cursor: pointer;
 }
 
-@media (min-width:750px) {
-    .movie-page-shell {
+@media (min-width:600px) {
+    /* .movie-page-shell {
         margin: 125px auto 0;
         width: 90%;
         max-width: 768px;
@@ -66,5 +65,5 @@
         right: 0;
         display: block;
         width: 100%;
-    }
+    } */
 }

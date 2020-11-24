@@ -1,10 +1,8 @@
 import React from 'react'
 import './LoadingGraphic.css'
 export default function LoadingGraphic(props) {
-    console.log(props)
     let style = {
         width: parseInt(props.browserWidth, 10) > 768 ? `${props.w}px` : "95vw",
-        // width: `${props.w}px`,
         height: `${props.h}px`,
         margin: `0 auto`,
         display: props.loaded ? 'none' : 'block',

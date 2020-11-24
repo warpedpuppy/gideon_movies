@@ -8,6 +8,7 @@ export default class MoviePage extends Component {
 
     constructor(props) {
         super(props); 
+        this.widthChange = 600;
         window.addEventListener('resize', this.updateWindowDimensions);
     }
 
@@ -48,15 +49,23 @@ export default class MoviePage extends Component {
        this.setState({ width: window.innerWidth, height: window.innerHeight });
     }
     render() {
-       
         let loadedClass = this.state.loaded ? "loaded" : "not-loaded" ;
-        let style  = {
-            width: parseInt(this.state.width, 10) > 768 ? `${parseInt(this.state.movie.width,10)}px` : "95vw",
-            height: this.state.movie.height,
-            margin: "0 auto"
+        let mobileWidth = this.state.width * 0.95;
+        let originalAspectRatio = this.state.movie.height / this.state.movie.width;
+        let mobileHeight = mobileWidth * originalAspectRatio;
+        let iframeStyle  = {
+            // width: `${parseInt(this.state.movie.width,10)}px`,
+            // height: `${parseInt(this.state.movie.height,10)}px`,
+            width: parseInt(this.state.width, 10) > this.widthChange ? `${parseInt(this.state.movie.width,10)}px` : `${parseInt(mobileWidth,10)}px`,
+            height: parseInt(this.state.width, 10) > this.widthChange ? `${parseInt(this.state.movie.height,10)}px` : `${parseInt(mobileHeight,10)}px`,
+            // width: parseInt(this.state.width, 10) > this.widthChange ? `${parseInt(this.state.movie.width,10)}px` : "95vw",
+            // height: parseInt(this.state.width, 10) > this.widthChange ? `${parseInt(this.state.movie.height,10)}px` : "auto",
+      
         }
-        let style2 = {
-            width: parseInt(this.state.width, 10) > 768 ? `${parseInt(this.state.movie.width,10)}px` : "auto",
+        let shellStyle = {
+            // width: parseInt(this.state.width, 10) > widthToChange ? `${parseInt(this.state.movie.width,10)}px` : "95vw",
+            // minHeight: `${parseInt(this.state.movie.height,10)}px`,
+            // border: "1px solid red"
         }
         return (
             <section className="movie-page-shell">
@@ -67,11 +76,11 @@ export default class MoviePage extends Component {
                 </div>
                 <Tabs defaultActiveKey="movie" id="movie-tabs">
                 <Tab eventKey="movie" title="Movie">
-                    <div className="movie-shell" style={style2}>
+                    <div className="movie-shell" style={shellStyle}>
                         <LoadingGraphic w={this.state.movie.width} h={this.state.movie.height} loaded={this.state.loaded} browserWidth={this.state.width} />
                             <iframe 
                             className="iFrameClass"
-                            style={style}
+                            style={iframeStyle}
                             src={this.state.movie.src}  
                             title="movie 4" 
                           
@@ -79,14 +88,15 @@ export default class MoviePage extends Component {
                             allow="autoplay; fullscreen" 
                             onLoad={ () => this.loadComplete() }
                             allowFullScreen></iframe>
-                        <p>
-                            <a href={this.state.movie.vimeoLink}>{this.state.movie.title}</a> from 
-                            <a href="https://vimeo.com/user38547687">Gideon Baeza</a> on <a href="https://vimeo.com">Vimeo</a>.
-                        </p>
+                     
                     </div>
                 </Tab>
                 <Tab eventKey="details" title="Details about the movie">
                     <h1>2</h1>
+                       <p>
+                            <a href={this.state.movie.vimeoLink}>{this.state.movie.title}</a> from 
+                            <a href="https://vimeo.com/user38547687">Gideon Baeza</a> on <a href="https://vimeo.com">Vimeo</a>.
+                        </p>
                 </Tab>
                 </Tabs>
                 
