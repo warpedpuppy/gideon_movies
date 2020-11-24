@@ -49,7 +49,7 @@ export default class MoviePage extends Component {
        this.setState({ width: window.innerWidth, height: window.innerHeight });
     }
     render() {
-        let loadedClass = this.state.loaded ? "loaded" : "not-loaded" ;
+      //  let loadedClass = this.state.loaded ? "loaded" : "not-loaded" ;
         let mobileWidth = this.state.width * 0.95;
         let originalAspectRatio = this.state.movie.height / this.state.movie.width;
         let mobileHeight = mobileWidth * originalAspectRatio;
