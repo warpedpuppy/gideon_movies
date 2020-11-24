@@ -50,7 +50,7 @@ export default class MoviePage extends Component {
     }
     render() {
       //  let loadedClass = this.state.loaded ? "loaded" : "not-loaded" ;
-        let mobileWidth = this.state.width * 0.95;
+        let mobileWidth = this.state.width * 0.9;
         let originalAspectRatio = this.state.movie.height / this.state.movie.width;
         let mobileHeight = mobileWidth * originalAspectRatio;
         let iframeStyle  = {
@@ -63,7 +63,7 @@ export default class MoviePage extends Component {
       
         }
         let shellStyle = {
-            // width: parseInt(this.state.width, 10) > widthToChange ? `${parseInt(this.state.movie.width,10)}px` : "95vw",
+            // width: parseInt(this.state.width, 10) > this.widthChange ? `${parseInt(this.state.movie.width,10)}px` : `${parseInt(mobileWidth,10)}px`,
             // minHeight: `${parseInt(this.state.movie.height,10)}px`,
             // border: "1px solid red"
         }
@@ -77,7 +77,7 @@ export default class MoviePage extends Component {
                 <Tabs defaultActiveKey="movie" id="movie-tabs">
                 <Tab eventKey="movie" title="Movie">
                     <div className="movie-shell" style={shellStyle}>
-                        <LoadingGraphic w={this.state.movie.width} h={this.state.movie.height} loaded={this.state.loaded} browserWidth={this.state.width} />
+                        <LoadingGraphic w={iframeStyle.width} h={iframeStyle.height} loaded={this.state.loaded} browserWidth={this.state.width} />
                             <iframe 
                             className="iFrameClass"
                             style={iframeStyle}
