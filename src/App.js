@@ -23,8 +23,7 @@ class App extends React.Component {
   render () {
     return (
       <div className="App">
-        {/* <div className="movie-reel"></div> */}
-        {/* <img src="filmStrip.png" /> */}
+        
         <Header />
           <main>
           <Switch>

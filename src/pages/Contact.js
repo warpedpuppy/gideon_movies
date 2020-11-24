@@ -36,6 +36,7 @@ export default class Contact extends Component {
     render() {
         return (
             <section>
+                <div className="movie-reel"></div>
                 <div className="contact-div">
                 <div className="contact-background-image"></div>
                     <h3>Contact Gideon:</h3>

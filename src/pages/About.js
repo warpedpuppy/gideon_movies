@@ -4,6 +4,7 @@ export default class About extends Component {
     render() {
         return (
             <section>
+                <div className="movie-reel"></div>
                 <div className="about-div">
                     <img src="/bmps/portrait.png" alt="gideon baeza - portrait"  />
                     {/* <div className="about-text"> */}
