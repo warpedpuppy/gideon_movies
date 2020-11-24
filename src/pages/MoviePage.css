@@ -1,3 +1,7 @@
+.movie-shell {
+    position: relative;
+}
+
 .movie-page-shell {
     margin: 125px auto 0;
     width: 100vw;
@@ -16,7 +20,10 @@
 }
 
 .iFrameClass {
-    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     display: block;
     width: 100%;
 }
@@ -51,5 +58,13 @@
     }
     .movie-shell {
         margin: 20px auto;
+    }
+    .iFrameClass {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: block;
+        width: 100%;
     }
 }

@@ -1,15 +1,14 @@
 import React from 'react'
 import './LoadingGraphic.css'
 export default function LoadingGraphic(props) {
+    console.log(props)
     let style = {
-        width: `${props.w}px`,
+        width: parseInt(props.browserWidth, 10) > 768 ? `${props.w}px` : "95vw",
+        // width: `${props.w}px`,
         height: `${props.h}px`,
         margin: `0 auto`,
         display: props.loaded ? 'none' : 'block',
-        // border: "1px solid black",
-       // backgroundColor: "blue",
-
-        
+        // opacity: props.loaded ? '0' : '1'
     }
     return (
         <div style={style} className={`loading-graphic ${props.loaded}`}>

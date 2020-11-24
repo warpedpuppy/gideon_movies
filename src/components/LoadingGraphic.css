@@ -66,3 +66,11 @@
             top: -500px;
         }
     }
+    
+    @media (min-width: 768px) {
+        .loading-graphic {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
