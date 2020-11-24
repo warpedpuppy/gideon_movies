@@ -19,11 +19,11 @@ class App extends React.Component {
   }
   setHeight = (movieHeight) => {
     this.setState({movieHeight})
-    console.log("set", movieHeight.toString())
   }
   render () {
     return (
       <div className="App">
+        <div className="movie-reel"></div>
         <Header />
           <main>
           <Switch>
