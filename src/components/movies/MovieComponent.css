@@ -33,13 +33,13 @@
     width: 100%;
 }
 
-@media (min-width: 750px) {
+@media (min-width: 768px) {
     .movie-module div {
         display: flex;
     }
-    .movie-module img {
+    .movie-module div img {
         margin-right: 10px;
-        height: auto;
-        width: auto;
+        width: 281px;
+        height: 144px
     }
 }

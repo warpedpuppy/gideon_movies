@@ -1,5 +1,7 @@
 .home-div .home-text ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .background-image-mobile {
@@ -28,8 +30,8 @@ main {
 }
 
 .home-text {
-    width: 80%;
-    margin: 150px auto;
+    width: 90%;
+    margin: 100px auto;
     position: relative;
     z-index: 2;
 }
@@ -38,19 +40,4 @@ main {
     text-align: left;
 }
 
-@media (min-width:750px) {
-    .background-image-mobile {
-        display: none;
-    }
-    .background-image {
-        display: block;
-        width: 100vw;
-        height: auto;
-        opacity: 0;
-        position: fixed;
-        top: 0;
-        left: 0;
-        margin: 0;
-        transition: opacity 1s;
-    }
-}
+@media (min-width:750px) {}
