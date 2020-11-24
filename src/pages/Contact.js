@@ -13,27 +13,25 @@ export default class Contact extends Component {
             checker = e.target.checker.value;
         this.setState({message: "sending. . . "})
         if (email && message) {
-            let response = await fetch(`${Config.local_url}/email`, {
+            let response = await fetch(`${Config.url}`, {
                 body: JSON.stringify({ email, message, checker }),
                 headers: {
                  'content-type': 'application/json',
                 },
                 method: "POST"
             });
-            let responseJson = await response.json();
-            console.log(responseJson)
 
-            if (responseJson.message) {
-                this.setState({message: "message sent"})
+            if (!response.ok) {
+                 this.setState({message: "there was an issue, please try again later"})
+                document.getElementById("contact-form").reset()
             } else {
-                this.setState({message: "there was an issue, please try again later"})
+                let responseJson = await response.json();
+                this.setState({message: "message sent"})
+                document.getElementById("contact-form").reset()
             }
-       
         } else {
             this.setState({message: "all fields required"})
         }
-
-      
     }
     render() {
         return (
@@ -41,7 +39,7 @@ export default class Contact extends Component {
                 <div className="contact-div">
                 <div className="contact-background-image"></div>
                     <h3>Contact Gideon:</h3>
-                    <Form onSubmit={this.onSubmitHandler}>
+                    <Form id="contact-form" onSubmit={this.onSubmitHandler}>
                         <Form.Group controlId="exampleForm.ControlInput1">
                             <Form.Label>email address:</Form.Label>
                             <Form.Control type="email" name="email" placeholder="name@example.com" required/>

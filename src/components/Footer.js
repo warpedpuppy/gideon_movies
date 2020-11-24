@@ -8,8 +8,6 @@ export default class Footer extends Component {
         let footerStyle = {
             marginTop: `${height}px`
         }
-        
-        console.log(this.props.movieHeight, height)
         return (
             <footer style={footerStyle}>
                 <a href="https://vimeo.com/user38547687" rel="noreferrer" target="_blank"><img alt="vimeo logo" src={Vimeo} /></a>
