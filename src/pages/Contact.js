@@ -25,7 +25,7 @@ export default class Contact extends Component {
                  this.setState({message: "there was an issue, please try again later"})
                 document.getElementById("contact-form").reset()
             } else {
-                let responseJson = await response.json();
+               // let responseJson = await response.json();
                 this.setState({message: "message sent"})
                 document.getElementById("contact-form").reset()
             }
