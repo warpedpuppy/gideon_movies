@@ -64,7 +64,7 @@ export default class MoviePage extends Component {
                     <span className="prevNext" onClick={this.previousMovie}>previous</span>
                     <span className="prevNext" onClick={this.nextMovie}>next</span>
                 </div>
-                <Tabs defaultActiveKey="details" id="movie-tabs">
+                <Tabs defaultActiveKey="movie" id="movie-tabs">
                 <Tab eventKey="movie" title="Movie">
                     <div className="movie-shell">
                         <LoadingGraphic w={iframeStyle.width} h={iframeStyle.height} loaded={this.state.loaded} browserWidth={this.state.width} />
