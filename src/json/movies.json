@@ -1,30 +1,38 @@
 {
     "movie1": {
-        "src": "https://player.vimeo.com/video/178803874",
-        "width": 640,
-        "height": 360,
-        "vimeoLink": "https://vimeo.com/178803874",
-        "title": "Candlepin"
+        "src": "https://www.youtube.com/embed/hhaPjm1uRic",
+        "width": 560,
+        "height": 315,
+        "link": "https://www.youtube.com/watch?v=hhaPjm1uRic&feature=youtu.be",
+        "title": "Bottled Lies",
+        "desc": "A short film based on the seven deadly sins.",
+        "thumbnail": "bottledLies.png"
     },
     "movie2": {
         "src": "https://player.vimeo.com/video/381454561",
         "width": 640,
         "height": 267,
-        "vimeoLink": "https://vimeo.com/381454561",
-        "title": "LoveBug"
+        "link": "https://vimeo.com/381454561",
+        "title": "Love Bug",
+        "desc": "A romcom about the first date.",
+        "thumbnail": "loveBug.png"
     },
     "movie3": {
         "src": "https://player.vimeo.com/video/402718143",
         "width": 640,
         "height": 360,
-        "vimeoLink": "https://vimeo.com/402718143",
-        "title": "Book Arts Doc Original"
+        "link": "https://vimeo.com/402718143",
+        "title": "Book Arts at Maine Media",
+        "desc": "A promotional video about the Book Arts program at Maine Media.",
+        "thumbnail": "bookArtsAtMaineMedia.png"
     },
     "movie4": {
-        "src": "https://player.vimeo.com/video/447632879",
+        "src": "https://player.vimeo.com/video/316011414",
         "width": 640,
-        "height": 396,
-        "vimeoLink": "https://vimeo.com/447632879",
-        "title": "Finding Our Voices Documentary"
+        "height": 360,
+        "link": "https://vimeo.com/316011414",
+        "title": "Let The Streets Be Wet With Paint",
+        "desc": "A documentary on street art in Boston.",
+        "thumbnail": "letTheStreetsBeWetWithPaint.png"
     }
 }

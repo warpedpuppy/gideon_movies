@@ -8,22 +8,13 @@ export default class Home extends Component {
     }
     render() {
         return (
-            <section className="home-div">
-                <div className="background-image-mobile"></div>
-                <img src="https://condescending-curie-29a045.netlify.app//bmps/background.png" alt="gideon with bruno" className="background-image" onLoad={this.imageLoaded} />
-                <div className="home-text">
-               
-                    <p>Hi my name is Gideon and I make movies!  </p>
-
-                    <ul>
+                <div className="home-page">
                         {
                             Object.keys(Movies).map( (item, index) => {
-                                return <li key={index}><MovieComponent {...Movies[item]} index={ index + 1} /></li>
+                                return <MovieComponent key={index} {...Movies[item]} index={ index + 1} />
                             })
                         }
-                    </ul>
                 </div>
-            </section>
         )
     }
 }

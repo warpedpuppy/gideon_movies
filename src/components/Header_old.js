@@ -5,13 +5,15 @@ import './Header.css'
 export default class Header extends Component {
     render() {
         return (
-            <Navbar collapseOnSelect expand="lg" fixed="top">
+            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
             <Navbar.Brand as={Link} to="/">Gideon Baeza</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav>
-                    <span><a href="mailto:gideonbaeza@gmail.com">gideonbaeza@gmail.com</a></span>
-                    <span>207.230.9435</span>
+                <Nav.Link eventKey="1" as={Link} to="/">Home</Nav.Link>
+                {/* <Nav.Link eventKey="1" as={Link}  to="/movies">Movies</Nav.Link> */}
+                <Nav.Link eventKey="1" as={Link}  to="/about">About</Nav.Link>
+                <Nav.Link eventKey="1" as={Link}  to="/contact">Contact</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
             </Navbar>

@@ -1,44 +1,12 @@
-.home-div .home-text ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.home-page {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
 }
 
-.background-image-mobile {
-    background-image: url('https://condescending-curie-29a045.netlify.app/bmps/background.png');
-    background-size: cover;
-    background-position: center center;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -2;
-    opacity: 0.25;
-
+@media (min-width: 900px) {
+    .home-page {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
 }
-
-.background-image {
-    display: none;
-}
-
-.background-image.on {
-    opacity: 0.25;
-}
-
-main {
-    background-color: transparent;
-}
-
-.home-text {
-    width: 90%;
-    margin: 100px auto;
-    position: relative;
-    z-index: 2;
-}
-
-.home-text p {
-    text-align: left;
-}
-
-@media (min-width:750px) {}

@@ -2,15 +2,10 @@ import React from 'react'
 import './App.css';
 import { Route, Switch } from 'react-router-dom';
 import Header from './components/Header';
-// import Background from './components/Background';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
-import Contact from './pages/Contact';
-import About from './pages/About';
-// import Movies from './pages/Movies';
 import MoviePage from './pages/MoviePage';
 import Footer from './components/Footer'
-// import {Navbar, Nav, NavDropdown, Form, FormControl, Button, NavItem} from 'react-bootstrap';
 
 class App extends React.Component {
 
@@ -28,8 +23,6 @@ class App extends React.Component {
           <main>
           <Switch>
               <Route exact path="/" component={Home} />
-              <Route path="/about" component={About} />
-              <Route path="/contact" component={Contact} />
               <Route path="/movie-page/:id" render={ (props) => <MoviePage {...props} setHeight={this.setHeight} /> } />
               <Route component={NotFound} />
           </Switch>

@@ -1,8 +1,11 @@
-footer img {
-    float: none;
-    clear: both;
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 footer img {
-    float: none;
+    margin: 0 10px 10px;
+    width: 30px;
+    height: 30px;
 }

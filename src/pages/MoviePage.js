@@ -50,7 +50,6 @@ export default class MoviePage extends Component {
        this.setState({ width: window.innerWidth, height: window.innerHeight });
     }
     render() {
-      //  let loadedClass = this.state.loaded ? "loaded" : "not-loaded" ;
         let mobileWidth = this.state.width * 0.9;
         let originalAspectRatio = this.state.movie.height / this.state.movie.width;
         let mobileHeight = mobileWidth * originalAspectRatio;
@@ -65,7 +64,7 @@ export default class MoviePage extends Component {
                     <span className="prevNext" onClick={this.previousMovie}>previous</span>
                     <span className="prevNext" onClick={this.nextMovie}>next</span>
                 </div>
-                <Tabs defaultActiveKey="movie" id="movie-tabs">
+                <Tabs defaultActiveKey="details" id="movie-tabs">
                 <Tab eventKey="movie" title="Movie">
                     <div className="movie-shell">
                         <LoadingGraphic w={iframeStyle.width} h={iframeStyle.height} loaded={this.state.loaded} browserWidth={this.state.width} />
@@ -84,11 +83,17 @@ export default class MoviePage extends Component {
                     </div>
                 </Tab>
                 <Tab eventKey="details" title="Details about the movie">
-                    <h1>2</h1>
-                       <p>
-                            <a href={this.state.movie.vimeoLink}>{this.state.movie.title}</a> from 
-                            <a href="https://vimeo.com/user38547687">Gideon Baeza</a> on <a href="https://vimeo.com">Vimeo</a>.
-                        </p>
+                       <div className="movie-details">
+                           <div className="movie-details-inner">
+                            <a href={this.state.movie.link}>{this.state.movie.title}</a> 
+                            <p>{this.state.movie.desc}</p>
+                            <p>visit Gideon's youtube and vimeo pages: </p>
+                            <ul>
+                                <li> <a href="https://vimeo.com/user38547687" rel="noreferrer" target="_blank">vimeo</a></li>
+                                <li><a href="https://www.youtube.com/results?search_query=gideon+baeza" rel="noreferrer" target="_blank">youtube</a></li>
+                            </ul>
+                        </div>
+                        </div>
                 </Tab>
                 </Tabs>
                 
