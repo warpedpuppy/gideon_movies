@@ -1,14 +1,41 @@
 {
     "movie1": {
-        "src": "https://www.youtube.com/embed/hhaPjm1uRic",
-        "width": 560,
-        "height": 315,
-        "link": "https://www.youtube.com/watch?v=hhaPjm1uRic&feature=youtu.be",
-        "title": "Bottled Lies",
-        "desc": "A short film based on the seven deadly sins.",
-        "thumbnail": "bottledLies.png"
+        "src": "https://player.vimeo.com/video/630543642?h=6258a1e18b",
+        "width": 640,
+        "height": 360,
+        "link": "https://player.vimeo.com/video/630543642?h=6258a1e18b",
+        "title": "Maine Media Promotional Video",
+        "desc": "Behind the scenes at Maine Media Workshops and College.",
+        "thumbnail": "tenWeek.png"
     },
     "movie2": {
+        "src": "https://player.vimeo.com/video/643577789?h=7771218c99",
+        "width": 640,
+        "height": 360,
+        "link": "https://player.vimeo.com/video/643577789?h=7771218c99",
+        "title": "Sherman's Point",
+        "desc": "An intimate moment of a former couple.",
+        "thumbnail": "shermansPoint.png"
+    },
+    "movie3": {
+        "src": "https://player.vimeo.com/video/644872825?h=e620019dff",
+        "width": 640,
+        "height": 360,
+        "link": "https://player.vimeo.com/video/644872825?h=e620019dff",
+        "title": "Mock Ikea Commercial",
+        "desc": "Build something.",
+        "thumbnail": "ikea.png"
+    },
+    "movie4": {
+        "src": "https://player.vimeo.com/video/641988666?h=25d6139ee6",
+        "width": 640,
+        "height": 360,
+        "link": "https://player.vimeo.com/video/641988666?h=25d6139ee6",
+        "title": "What You Want - Gaby Dimond (Official Music Video)",
+        "desc": "Gaby Dimond (Official Music Video)",
+        "thumbnail": "gabyDimond.png"
+    },
+    "movie5": {
         "src": "https://player.vimeo.com/video/381454561",
         "width": 640,
         "height": 267,
@@ -17,7 +44,7 @@
         "desc": "A romcom about the first date.",
         "thumbnail": "loveBug.png"
     },
-    "movie3": {
+    "movie6": {
         "src": "https://player.vimeo.com/video/402718143",
         "width": 640,
         "height": 360,
@@ -26,13 +53,22 @@
         "desc": "A promotional video about the Book Arts program at Maine Media.",
         "thumbnail": "bookArtsAtMaineMedia.png"
     },
-    "movie4": {
-        "src": "https://player.vimeo.com/video/316011414",
+    "movie7": {
+        "src": "https://player.vimeo.com/video/178803874?h=ee8e292d69",
         "width": 640,
         "height": 360,
-        "link": "https://vimeo.com/316011414",
-        "title": "Let The Streets Be Wet With Paint",
-        "desc": "A documentary on street art in Boston.",
-        "thumbnail": "letTheStreetsBeWetWithPaint.png"
+        "link": "https://player.vimeo.com/video/178803874?h=ee8e292d69",
+        "title": "Candlepin",
+        "desc": "A personal portrayal about getting back up.",
+        "thumbnail": "candlepin.png"
+    },
+    "movie8": {
+        "src": "https://player.vimeo.com/video/630653328?h=23b7608db6",
+        "width": 640,
+        "height": 360,
+        "link": "https://player.vimeo.com/video/630653328?h=23b7608db6",
+        "title": "Warby Parker",
+        "desc": "Mock advertisement for Warby Parker",
+        "thumbnail": "warbyParker.png"
     }
 }
