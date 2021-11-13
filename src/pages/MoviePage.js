@@ -58,14 +58,15 @@ export default class MoviePage extends Component {
             height: parseInt(this.state.width, 10) > this.widthChange ? `${parseInt(this.state.movie.height,10)}px` : `${parseInt(mobileHeight,10)}px`,
         }
         return (
+            <div className="movie-page-background">
             <section className="movie-page-shell">
                 <h2>{this.state.movie.title}</h2>
                 <div className="button-div">
                     <span className="prevNext" onClick={this.previousMovie}>previous</span>
                     <span className="prevNext" onClick={this.nextMovie}>next</span>
                 </div>
-                <Tabs defaultActiveKey="movie" id="movie-tabs">
-                <Tab eventKey="movie" title="Movie">
+                {/* <Tabs defaultActiveKey="movie" id="movie-tabs"> */}
+                {/* <Tab eventKey="movie" title="Movie"> */}
                     <div className="movie-shell">
                         <LoadingGraphic w={iframeStyle.width} h={iframeStyle.height} loaded={this.state.loaded} browserWidth={this.state.width} />
                             <iframe 
@@ -81,8 +82,8 @@ export default class MoviePage extends Component {
                             allowFullScreen></iframe>
                      
                     </div>
-                </Tab>
-                <Tab eventKey="details" title="Details about the movie">
+                {/* </Tab> */}
+                {/* <Tab eventKey="details" title="Details about the movie">
                        <div className="movie-details">
                            <div className="movie-details-inner">
                             <a href={this.state.movie.link}>{this.state.movie.title}</a> 
@@ -94,10 +95,11 @@ export default class MoviePage extends Component {
                             </ul>
                         </div>
                         </div>
-                </Tab>
-                </Tabs>
+                </Tab> */}
+                {/* </Tabs> */}
                 
             </section>
+            </div>
         )
     }
 }

@@ -1,6 +1,7 @@
 .movie-module {
     padding: 20px;
     text-align: left;
+    color: white;
 }
 
 .movie-module h3 {
@@ -21,7 +22,8 @@
 }
 
 .movie-module h3 a {
-    color: black;
+    color: #ccc;
+    border-bottom: 1px solid white;
 }
 
 .movie-module p {
@@ -37,7 +39,7 @@
 
 .movie-module .movie-link {
     float: right;
-    color: black;
+    color: white;
     font-size: 12px;
     font-style: italic;
 }
