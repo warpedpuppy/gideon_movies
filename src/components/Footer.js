@@ -7,7 +7,7 @@ export default class Footer extends Component {
         let iframeHeight = document.getElementById("iframe") ? document.getElementById("iframe").clientHeight : 0 ;
         let height = Math.max(iframeHeight, this.props.movieHeight) + 100;
         let footerStyle = {
-            marginTop: `${height}px`
+            paddingTop: `${height}px`
         }
         return (
             <footer style={footerStyle}>

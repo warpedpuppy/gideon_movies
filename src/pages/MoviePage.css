@@ -13,10 +13,10 @@
 }
 
 .movie-page-shell {
-    margin: 60px auto 0;
+    margin: 0 auto 0;
     width: 100vw;
-    max-width: 768px;
-    padding: 50px 15px;
+    /* max-width: 768px; */
+    padding: 50px 1rem;
 }
 
 .movie-page-shell h2 {

@@ -2,10 +2,17 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(163deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 1) 100%);
+    padding-bottom: 20px;
 }
 
 footer img {
     margin: 0 10px 10px;
     width: 30px;
     height: 30px;
+}
+
+footer img {
+    color: white
 }

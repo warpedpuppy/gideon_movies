@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import LoadingGraphic from '../components/LoadingGraphic';
 import './MoviePage.css';
 import Movies from '../json/movies.json';
-import { Tabs, Tab } from 'react-bootstrap';
+// import { Tabs, Tab } from 'react-bootstrap';
 
 export default class MoviePage extends Component {
 
