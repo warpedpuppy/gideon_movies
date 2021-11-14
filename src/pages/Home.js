@@ -7,6 +7,9 @@ export default class Home extends Component {
     imageLoaded = (e) => {
         e.target.classList.add("on")
     }
+    componentDidMount = () => {
+        window.scrollTo(0, 0);
+    }
     render() {
         return (
             <>

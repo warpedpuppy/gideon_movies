@@ -14,7 +14,7 @@ export default class MoviePage extends Component {
 
     componentDidMount () {
         let height = Movies[`movie${this.props.match.params.id}`].height;
- 
+        window.scrollTo(0, 0);
         this.props.setHeight(height)
        this.updateWindowDimensions();
        
