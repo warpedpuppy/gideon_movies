@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css';
 import { Route, Switch } from 'react-router-dom';
-import Header from './components/Header';
+import Menu from './components/Menu';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import MoviePage from './pages/MoviePage';
@@ -19,7 +19,7 @@ class App extends React.Component {
     return (
       <div className="App">
         
-        <Header />
+        <Menu />
           <main>
           <Switch>
               <Route exact path="/" component={Home} />
