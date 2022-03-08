@@ -1,7 +1,7 @@
 import React from 'react';
 import './PageTemplate.css';
 const PageTemplate = props => {
-	const { subtitle } = props
+	const { subtitle, xml } = props
 	return (
 		<section id="page-template-container">
 			<h2>{ subtitle }</h2>

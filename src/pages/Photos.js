@@ -1,13 +1,17 @@
-import React, { Component } from 'react'
+import React, { useEffect } from 'react'
+import './Home.css';
 import PageTemplate from '../components/templates/PageTemplate';
-export default class Home extends Component {
+import MoviesJSON from '../json/movies.json';
 
-    componentDidMount = () => {
+const Photos = props => {
+
+    useEffect(() => {
         window.scrollTo(0, 0);
-    }
-    render() {
-        return (
-            <PageTemplate  subtitle='Photography has given me an outlet to look at new terrain.'/>
-        )
-    }
+    }, [])
+
+	return (
+         <PageTemplate subtitle='Photography has given me an outlet to look at new terrain.'  xml={MoviesJSON} />
+    )
+    
 }
+export default Photos;
