@@ -10,7 +10,7 @@ class Header extends React.Component {
             <nav className="nav-wrapper">
 				<div id='nav-top-band'></div>
 				<div id='nav-content'>
-					<img src={'/20220308/logo.png'} alt='gideon baeza logo' />
+					<Link to='/'><img src={'/20220308/logo.png'} alt='gideon baeza logo' /></Link>
 					<input className="nav-hamburger" id="sub-checkbox" type="checkbox" />
 					<div className="nav-hamburger-spans sub">
 						<span></span>
@@ -18,9 +18,9 @@ class Header extends React.Component {
 						<span></span>
 					</div>
 					<div className="nav-links">
-						<span><Link>films</Link></span>
-						<span><Link>photos</Link></span>
-						<span> <Link>about</Link></span>
+						<span><Link to='/films'>films</Link></span>
+						<span><Link to='/photos'>photos</Link></span>
+						<span> <Link to='/about'>about</Link></span>
 					</div>
 				</div>
             </nav>

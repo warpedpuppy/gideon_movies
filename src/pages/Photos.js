@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import './Home.css';
 import PageTemplate from '../components/templates/PageTemplate';
 export default class Home extends Component {
 
@@ -8,7 +7,7 @@ export default class Home extends Component {
     }
     render() {
         return (
-            <PageTemplate subtitle='My film work explores the interplay of love and life.'/>
+            <PageTemplate  subtitle='Photography has given me an outlet to look at new terrain.'/>
         )
     }
 }

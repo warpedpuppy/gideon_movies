@@ -1,0 +1,32 @@
+#page-template-container {
+	margin: 5px 1rem;
+}
+#page-template-container h2 {
+	color: white;
+	font-size: 1.5rem;
+}
+.thumbnails {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.thumbnail {
+	background-color: #212b5d;
+	border-radius: 20px;
+	width: 100%;
+	min-height: 400px;
+}
+
+@media (min-width: 1024px) {
+
+	#page-template-container {
+		margin: 20px 6rem
+	}
+	.thumbnail {
+		background-color: #212b5d;
+		border-radius: 20px;
+		width: 50%;
+	}
+
+}
