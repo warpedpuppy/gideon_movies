@@ -1,14 +1,23 @@
 .nav-wrapper {
-    background: white;
-    color: black;
     display: flex;
+	flex-direction: column;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     position: relative;
     overflow: hidden;
-    padding-left: 1rem;
-    padding-right: 1rem
+  
+}
+#nav-top-band {
+	background-color: #ebebee;
+	height:45px;
+	width: 100vw;
+	margin-bottom: 1rem;
+}
+#nav-content {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
 }
 
 .nav-hamburger {
@@ -78,19 +87,19 @@
 }
 
 .nav-links span {
-    text-align: left;
+    
     display: inline-block;
-    margin: 5px 0;
+    margin: 5px 20px;
 }
 
 .nav-links span a {
     cursor: pointer;
     display: block;
     width: 100%;
-    text-align: left;
+    text-align: right;
     font-size: 1rem;
-    color: black;
-    font-weight:400;
+    color: white;
+	font-weight: bold;
 }
 
 .nav-links span a:hover {
@@ -126,6 +135,8 @@
 @media (min-width: 1024px) {
     .nav-wrapper {
         flex-wrap: nowrap;
+		padding-left: 6rem;
+		padding-right: 6rem;
     }
     .nav-hamburger {
         display: none;
@@ -148,7 +159,7 @@
         display: inline-block;
         width: auto;
         text-align: right;
-        margin: 0 0 0 20px;
+        margin: 0 0 0 100px;
         font-weight: bold;
     }
 }

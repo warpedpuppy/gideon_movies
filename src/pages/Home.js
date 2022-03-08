@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import './Home.css';
-import MovieComponent from '../components/movies/MovieComponent';
-import Movies from '../json/movies.json';
-import HomeHeader from '../components/HomeHeader';
+
 export default class Home extends Component {
     imageLoaded = (e) => {
         e.target.classList.add("on")
@@ -11,15 +9,17 @@ export default class Home extends Component {
         window.scrollTo(0, 0);
     }
     render() {
+		let obj = {backgroundImage: `url('/gideon.jpg')`}
         return (
             <>
-                <HomeHeader />
                 <div className="home-page">
-                        {
-                            Object.keys(Movies).map( (item, index) => {
-                                return <MovieComponent key={index} {...Movies[item]} index={ index + 1} />
-                            })
-                        }
+                        <div id='home-page-background' style={obj}></div>
+						<div id='home-page-text'>
+							<p>I hate fucking boring bios and shit like that.</p>
+							<p>I am a filmmaker.</p>
+							<div id='home-page-photo-credit'>Hometown Camden, Maine. Photo by Darcy Aders</div>
+						</div>
+						
                 </div>
             </>
         )

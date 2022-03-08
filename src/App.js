@@ -5,7 +5,7 @@ import Menu from './components/Menu';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import MoviePage from './pages/MoviePage';
-import Footer from './components/Footer'
+import Footer from './components/Footer';
 
 class App extends React.Component {
 
@@ -21,13 +21,13 @@ class App extends React.Component {
         
         <Menu />
           <main>
-          <Switch>
-              <Route exact path="/" component={Home} />
-              <Route path="/movie-page/:id" render={ (props) => <MoviePage {...props} setHeight={this.setHeight} /> } />
-              <Route component={NotFound} />
-          </Switch>
+			<Switch>
+				<Route exact path="/" component={Home} />
+				<Route path="/movie-page/:id" render={ (props) => <MoviePage {...props} setHeight={this.setHeight} /> } />
+				<Route component={NotFound} />
+			</Switch>
           </main>
-          <Footer movieHeight={this.state.movieHeight} />
+		  <Footer />
       </div>
     );
   }
